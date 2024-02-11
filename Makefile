@@ -7,7 +7,7 @@ OBJS = $(SRCS:.c=.o)
 all: $(OBJS)
 #$(OBJS): %.o: %.c
 %.o: %.c
-	-$(CC) -o $@ $^ -lm
+	-$(CC) -o $@ $^ -g -Wall -lm
 .PHONY: all
 
 #%.o: %.c
